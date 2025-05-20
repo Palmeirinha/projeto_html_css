@@ -1,197 +1,242 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Corpo da página */
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #222;
-  min-height: 100vh;
-}
-
-/* Container centralizador */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 24px 16px;
-}
-
-/* Cabeçalho */
-header, .header {
-  background: linear-gradient(90deg, #232526 0%, #414345 100%);
-  color: #fff;
-  padding: 32px 0 16px 0;
+/* cabecalho da pgn*/
+header {
+  background-color: #7c7777;
+  color: white;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px 0;
 }
 
-header h1, .header h1 {
-  font-size: 2.5em;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
-
-nav ul, .header ul {
+header nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 32px;
-  margin-top: 12px;
+  gap: 24px;
 }
 
-nav ul li a, .header a {
+header nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1em;
-  transition: color 0.2s;
-}
-
-nav ul li a:hover, .header a:hover {
-  color: #FFD700;
-}
-
-/* Destaque/banner */
-.destaque {
-  margin: 32px 0;
-  text-align: center;
-}
-
-.destaque img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-}
-
-/* Catálogo de carros */
-.catalogo, .carros {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
-  margin: 32px 0;
-}
-
-.carro {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  padding: 20px 16px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-  border: 1px solid #e0e0e0;
-}
-
-.carro:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
-}
-
-.carro img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
-.carro h3 {
-  font-size: 1.2em;
-  margin: 10px 0 6px;
-  color: #007BFF;
-}
-
-.carro p {
-  margin-bottom: 12px;
-  font-weight: 500;
-  color: #444;
-}
-
-.carro button {
-  padding: 10px 18px;
-  background: linear-gradient(90deg, #007BFF 60%, #0056b3 100%);
-  color: #fff;
-  border: none;
+  font-weight: bold;
+  padding: 8px 16px;
   border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
+  background: #1e88e5; 
   transition: background 0.2s;
 }
 
-.carro button:hover {
-  background: linear-gradient(90deg, #0056b3 60%, #007BFF 100%);
+header nav ul li a:hover {
+  background: #1565c0;
+  color: #fff;
 }
 
-/* Formulário de contato/compra */
-.formulario {
-  max-width: 420px;
-  margin: 40px auto;
+/* home.html*/
+#bem-vindo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.bem_vindo {
   background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  max-width: 600px;
+  margin: 40px auto 24px auto;
   padding: 32px 24px;
-  border-radius: 10px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  text-align: center;
 }
 
-form {
+.bem_vindo h2 {
+  color: #1e88e5;
+  margin-bottom: 12px;
+}
+
+.bem_vindo p {
+  color: #444;
+  margin-bottom: 24px;
+}
+
+#pgnestoque {
+  display: inline-block;
+  background: #1e88e5;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 24px auto 0 auto;
+  transition: background 0.2s;
+}
+
+#pgnestoque:hover {
+  background: #1565c0;
+}
+
+.minicatalago {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background-color: #beb6b6;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 32px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.minicatalago .card {
+  width: 100%;
+  max-width: 200px;
+  min-height: 200px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.carro-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: #f7f7f7;
+}
+
+.modelo {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.descricao {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.preco {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e88e5;
+  margin-bottom: 15px;
+}
+
+/* estoque.html*/
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px;
+}
+
+/* sobre.html*/
+section {
+  /* max-width: 700px; */
+  width: 100%;
+  margin: 48px auto 0 auto;
+  text-align: center;
+}
+
+.container {
+  background: #beb6b6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  max-width: 700px;
+  margin: 48px auto 0 auto;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+  background: #7c7777;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 16px 0;
+  margin-top: 40px;
+  font-size: 16px;
+  border-top: 4px solid #1e88e5;
+}
+
+footer p {
+  margin: 6px 0;
+  letter-spacing: 0.5px;
+}
+
+.pgnestoque{
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 14px;
 }
 
-form label {
-  font-weight: 500;
-  margin-bottom: 4px;
+main {
+  flex: 1;
 }
 
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1em;
-  resize: vertical;
+/*responsividade*/
+@media (max-width: 900px) {
+  .minicatalago {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .card {
+    width: 90%;
+    max-width: 350px;
+    min-height: 410px;
+  }
+  .catalogo {
+    padding: 20px;
+    gap: 16px;
+  }
 }
 
-form button {
-  margin-top: 16px;
-  padding: 12px;
-  background: #232526;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1em;
-  cursor: pointer;
-  transition: background 0.2s;
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .bem_vindo {
+    padding: 18px 6px;
+  }
+  .card {
+    padding: 18px 8px;
+  }
+  .carro-img {
+    height: 120px;
+  }
+  section {
+    margin: 24px auto 0 auto;
+    max-width: 98vw;
+  }
+  #pgnestoque {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 14px;
+    padding: 16px 0 10px 0;
+  }
 }
 
-form button:hover {
-  background: #007BFF;
-}
 
-/* Rodapé */
-footer, .footer {
-  background: #232526;
-  color: #fff;
+.centralizar-btn {
   text-align: center;
-  padding: 18px 0;
-  margin-top: 40px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.06);
-}
-
-/* Responsividade extra */
-@media (max-width: 700px) {
-  .catalogo, .carros {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .container {
-    padding: 12px;
-  }
-  header, .header {
-    padding: 18px 0 10px 0;
-  }
+  margin-top: 32px;
 }

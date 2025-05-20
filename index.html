@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palmeirinha Cars</title>
+    <title>Palmeirinha Cars - Sua Loja de Carros</title>
     <link rel="stylesheet" href="estilo.css"/>
 </head>
-
 <body>
     <header>
         <h1>Palmeirinha Cars</h1>
         <nav>
             <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="estoque.html">Estoque</a> </li>
-                <li> <a href="sobre.html">Sobre</a> </li>
-                <li> <a href="login.html">Login</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Bem vindo à melhor loja de carros da Palmeirinha</h2>
-            <p>Confira os modelos disponiveis em estoque</p>
-            <img src="chevette.png" alt="img_chevette">
+        <!-- Seção de boas-vindas -->
+        <section class="bem_vindo">
+            <h2>Bem-vindo à Palmeirinha Cars!</h2>
+            <p>Os melhores carros clássicos da região, com qualidade e confiança.</p>
+            <p>Confira nosso estoque e encontre o carro dos seus sonhos!</p>
         </section>
+
+        <section class="minicatalago">
+            <div class="card">
+                <img class="carro-img" src="imagens/chevette-removebg-preview.png" alt="Chevette 1979">
+                <h3 class="modelo">Chevette 1979</h3>
+            </div>
+            <div class="card">
+                <img class="carro-img" src="imagens/chevetteluxo-removebg-preview.png" alt="Chevette Luxo 1988">
+                <h3 class="modelo">Chevette Luxo 1988</h3>
+            </div>
+            <div class="card">
+                <img class="carro-img" src="imagens/tubarao-removebg-preview.png" alt="Chevette Tubarão">
+                <h3 class="modelo">Chevette Tubarão</h3>
+            </div>
+        </section>
+
+        <div class="centralizar-btn">
+            <a id="pgnestoque" href="estoque.html">Ver Estoque</a>
+        </div>
     </main>
 
     <footer>
-
-        <p>&copy; 2023 Palmeirinha Cars. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Palmeirinha Cars. Todos os direitos reservados.</p>
         <p>Desenvolvido por: Joao Pedro</p>
         <p>Contato: 42988423465</p>
-
     </footer>
 </body>
-
 </html>
